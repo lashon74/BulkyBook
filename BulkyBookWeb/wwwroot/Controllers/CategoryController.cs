@@ -30,6 +30,7 @@ namespace BulkyBookWeb.Controllers
         [ValidateAntiForgeryToken]//injects key into form to prevent forgery
         public IActionResult Create(Category obj )
         {
+            
             if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);
