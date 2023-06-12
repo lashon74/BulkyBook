@@ -7,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 //Telling program we need to use dbcontext
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
-    builder.Configuration.GetConnectionString("DefaultConnection")
+    //builder.Configuration.GetConnectionString("DefaultConnection")
+    builder.Configuration.GetConnectionString("PCDefaultConnection")
     ));
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var app = builder.Build();
