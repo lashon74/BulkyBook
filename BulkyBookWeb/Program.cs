@@ -25,7 +25,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-//Neds to be use before authorization
+//Needs to be use before authorization
 //app.UseAuthentication();
 app.UseAuthorization();
 
